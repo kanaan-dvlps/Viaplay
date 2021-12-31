@@ -14,8 +14,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // ? Routes files
+const TrailerRetriver = require('./routes/trailer');
 
 // ? Router middleware
+app.use('/api/v1', TrailerRetriver);
 
 // ! ##### Server #####
 // ? -----------------------
