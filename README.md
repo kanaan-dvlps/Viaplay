@@ -17,6 +17,7 @@ Root file consists of the test file, server file, dockerfile and docker compose 
 - Route: in this test we only have one router, and it'll call the handleViaplayRequstAdapter.js to send the link and also recieve the response back.
 
 ## Run the application
+_The Architectural design of the test is visualized and you can find them in pdf and image file type in root of the application!_
 Since the application is dockerized you can use `docker-compose up -d --build` for the first time to build it and then run it and after that you can only use `docker-compose up -d` to run it again (incase you've stoped it!).
 You need to hava a .env file to provide your `TMDB_API_KEY`.
 ## Architectrual Design
